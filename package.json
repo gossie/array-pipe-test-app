@@ -1,8 +1,10 @@
 {
-  "name": "pipe-benchmark",
+  "name": "array-pipe-test-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://gossie.github.io/array-pipe-test-app",
   "dependencies": {
+    "@gossie/array-pipe": "0.1.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -15,6 +17,14 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "author": "André Schreck",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gossie/array-pipe-test-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gossie/array-pipe/issues"
   },
   "eslintConfig": {
     "extends": "react-app"

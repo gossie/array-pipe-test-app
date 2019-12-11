@@ -1,26 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Test from './Test';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+    const left = 'array\n  .map(s => parseInt(s))\n  .some(n => n%2 === 0);';
+    const right = 'array.pipe(\n  map(s => parseInt(s)),\n  some(n => n%2 === 0)\n);'
+
+    return (
+        <div>
+            <span>
+                <Test defaultCode={left} />
+            </span>
+            <span>
+                <Test defaultCode={right} />
+            </span>
+        </div>
+    );
 }
-
-export default App;
