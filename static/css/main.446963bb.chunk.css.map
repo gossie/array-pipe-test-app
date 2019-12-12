@@ -1,0 +1,1 @@
+{"version":3,"sources":["Test.css"],"names":[],"mappings":"AAAA,gBACI,oBAAqB,CACrB,WAAY,CACZ,WACJ","file":"main.446963bb.chunk.css","sourcesContent":[".test-container {\n    display: inline-block;\n    width: 750px;\n    margin: 25px;\n}"]}
