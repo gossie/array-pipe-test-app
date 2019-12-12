@@ -3,9 +3,10 @@ sudo: required
 language: node_js
 node_js:
   - "node"
-#before_install:
-#  - echo "//registry.npmjs.org/:_authToken=\${GITHUB_PACKAGES_TOKEN}" >> .npmrc
+env:
+  - CI=false
 script:
+  - CI=false
   - npm run build
 #  - npm test
 deploy:
