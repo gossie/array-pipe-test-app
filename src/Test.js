@@ -38,21 +38,23 @@ export default function Test(props) {
     };
 
     return (
-        <span>
-            <table>
-                <tbody>
-                    <tr>
-                        <td>Number of elements:</td>
-                        <td><input value={numberOfElements} onChange={event => setNumberOfElements(event.target.value)} /></td>
-                    </tr>
-                    <tr>
-                        <td>Code:</td>
-                        <td><textarea cols="50" rows="10" value={code} onChange={event => setCode(event.target.value)} /></td>
-                    </tr>
-                </tbody>
-            </table>
-            <button onClick={callback}>Run</button>
+        <div>
+            <div class="field">
+                <label class="label">Number of elements</label>
+                <div class="control">
+                    <input type="text" className="input" value={numberOfElements} onChange={event => setNumberOfElements(event.target.value)} />
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Code</label>
+                <div class="control">
+                    <textarea className="textarea" rows="7" value={code} onChange={event => setCode(event.target.value)} />
+                </div>
+            </div>
+            <div class="control">
+                <button className="button is-primary" onClick={callback}>Run</button>
+            </div>
             { executionResult && <Result executionResult={executionResult} timeSpent={time} />}
-        </span>
+        </div>
     );
 }
