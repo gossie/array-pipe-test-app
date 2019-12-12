@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './Test.css';
 import '@gossie/array-pipe';
 import Result from './Result';
 
@@ -39,7 +38,7 @@ export default function Test(props) {
     };
 
     return (
-        <span className="test-container">
+        <span>
             <table>
                 <tbody>
                     <tr>
