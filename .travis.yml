@@ -6,7 +6,6 @@ node_js:
 env:
   - CI=false
 script:
-  - CI=false
   - npm run build
 #  - npm test
 deploy:
