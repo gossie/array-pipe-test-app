@@ -3,6 +3,7 @@ import './Test.css';
 import '@gossie/array-pipe';
 import Result from './Result';
 
+// This only exists so the code in the eval can reference the operators.
 var filter = require('@gossie/array-pipe/operators/filter').default;
 var map = require('@gossie/array-pipe/operators/map').default;
 var distinct = require('@gossie/array-pipe/operators/distinct').default;
@@ -13,7 +14,7 @@ var every = require('@gossie/array-pipe/operators/every').default;
 
 
 export default function Test(props) {
-    const [numberOfElements, setNumberOfElements] = useState(10000000);
+    const [numberOfElements, setNumberOfElements] = useState(1000000);
     const [code, setCode] = useState(props.defaultCode);
     const [executionResult, setExecutionResult] = useState(undefined);
     const [time, setTime] = useState(-1);
