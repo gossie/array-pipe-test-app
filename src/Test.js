@@ -13,7 +13,7 @@ var every = require('@gossie/array-pipe/operators/every').default;
 
 
 export default function Test(props) {
-    const [numberOfElements, setNumberOfElements] = useState(1000000);
+    const [numberOfElements, setNumberOfElements] = useState(props.defaultNumberOfElements);
     const [code, setCode] = useState(props.defaultCode);
     const [executionResult, setExecutionResult] = useState(undefined);
     const [time, setTime] = useState(-1);
