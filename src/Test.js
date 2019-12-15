@@ -28,7 +28,12 @@ export default function Test(props) {
         
         console.debug('start evaluating your code');
         const date1 = new Date();
-        const result = eval(code);
+        let result = undefined;
+        try {
+            result = eval(code);
+        } catch (e) {
+            result = e;
+        }
         setExecutionResult(result);
         const date2 = new Date();
         const duration = date2.getTime() - date1.getTime()
