@@ -5,6 +5,7 @@ import Result from './Result';
 // This only exists so the code in the eval can reference the operators.
 var filter = require('@gossie/array-pipe/operators/filter').default;
 var map = require('@gossie/array-pipe/operators/map').default;
+var flatMap = require('@gossie/array-pipe/operators/flat-map').default;
 var distinct = require('@gossie/array-pipe/operators/distinct').default;
 var first = require('@gossie/array-pipe/operators/first').default;
 var some = require('@gossie/array-pipe/operators/some').default;
