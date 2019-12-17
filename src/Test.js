@@ -3,13 +3,14 @@ import '@gossie/array-pipe';
 import Result from './Result';
 
 // This only exists so the code in the eval can reference the operators.
-var filter = require('@gossie/array-pipe/operators/filter').default;
-var map = require('@gossie/array-pipe/operators/map').default;
-var flatMap = require('@gossie/array-pipe/operators/flat-map').default;
-var distinct = require('@gossie/array-pipe/operators/distinct').default;
-var first = require('@gossie/array-pipe/operators/first').default;
-var some = require('@gossie/array-pipe/operators/some').default;
-var every = require('@gossie/array-pipe/operators/every').default;
+var filter = require('@gossie/array-pipe/operators').filter;
+var map = require('@gossie/array-pipe/operators').map;
+var flatMap = require('@gossie/array-pipe/operators').flatMap;
+var distinct = require('@gossie/array-pipe/operators').distinct;
+var find = require('@gossie/array-pipe/operators').find;
+var some = require('@gossie/array-pipe/operators').some;
+var every = require('@gossie/array-pipe/operators').every;
+var none = require('@gossie/array-pipe/operators').none;
 
 
 
