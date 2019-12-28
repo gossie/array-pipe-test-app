@@ -11,6 +11,9 @@ var find = require('@gossie/array-pipe/operators').find;
 var some = require('@gossie/array-pipe/operators').some;
 var every = require('@gossie/array-pipe/operators').every;
 var none = require('@gossie/array-pipe/operators').none;
+var reduceToSome = require('@gossie/array-pipe/operators').reduceToSome;
+var reduceToEvery = require('@gossie/array-pipe/operators').reduceToEvery;
+var reduceToNone = require('@gossie/array-pipe/operators').reduceToNone;
 
 
 
