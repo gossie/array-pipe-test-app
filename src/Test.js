@@ -64,7 +64,7 @@ export default function Test(props) {
             <div class="control">
                 <button className="button is-primary" onClick={callback}>Run</button>
             </div>
-            { executionResult && <Result executionResult={executionResult} timeSpent={time} />}
+            { executionResult !== undefined && <Result executionResult={executionResult} timeSpent={time} />}
         </div>
     );
 }
